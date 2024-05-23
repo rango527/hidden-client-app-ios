@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilterDetailCellView" rowHeight="70" id="Uvj-Wu-Vh3" customClass="FilterDetailCellView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uvj-Wu-Vh3" id="hpx-JV-4wm">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Process Stage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUm-jm-ZCi">
+                        <rect key="frame" x="23" y="22.5" width="294.5" height="25"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked-icon" translatesAutoresizingMaskIntoConstraints="NO" id="31J-u0-dHs">
+                        <rect key="frame" x="322.5" y="19" width="32.5" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32.329999999999998" id="RD4-DA-ZId"/>
+                            <constraint firstAttribute="width" constant="32.329999999999998" id="o9P-ZG-EuV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="31J-u0-dHs" firstAttribute="centerY" secondItem="hpx-JV-4wm" secondAttribute="centerY" id="4O0-Lr-cuD"/>
+                    <constraint firstItem="EUm-jm-ZCi" firstAttribute="leading" secondItem="hpx-JV-4wm" secondAttribute="leading" constant="23" id="5FG-IK-xFG"/>
+                    <constraint firstItem="EUm-jm-ZCi" firstAttribute="centerY" secondItem="hpx-JV-4wm" secondAttribute="centerY" id="CUv-fY-wdn"/>
+                    <constraint firstAttribute="trailing" secondItem="31J-u0-dHs" secondAttribute="trailing" constant="23" id="WxE-xz-zlV"/>
+                    <constraint firstItem="31J-u0-dHs" firstAttribute="leading" secondItem="EUm-jm-ZCi" secondAttribute="trailing" constant="5" id="bdx-Hh-uc9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="we2-Xm-hHm"/>
+            <connections>
+                <outlet property="checkedImageView" destination="31J-u0-dHs" id="jvu-Hi-Vr0"/>
+                <outlet property="titleLabel" destination="EUm-jm-ZCi" id="X3x-7T-bXM"/>
+            </connections>
+            <point key="canvasLocation" x="-54.399999999999999" y="174.51274362818592"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unchecked-icon" width="36" height="36"/>
+    </resources>
+</document>

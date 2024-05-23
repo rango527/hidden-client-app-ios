@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MakeOfferViewController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="hintLabel" destination="lHk-Mq-meA" id="sFc-7b-wlU"/>
+                <outlet property="messageTextView" destination="46V-bZ-Qit" id="MDA-HZ-Izv"/>
+                <outlet property="view" destination="bcz-ai-yxj" id="Wbo-oI-3GH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bcz-ai-yxj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIr-Gm-w1S">
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="66S-fV-vPX"/>
+                        <constraint firstAttribute="height" constant="50" id="am5-pA-nuX"/>
+                    </constraints>
+                    <state key="normal" image="back-button"/>
+                    <connections>
+                        <action selector="onBackTapped:" destination="-1" eventType="touchUpInside" id="og4-ah-ck5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Give the details of the offer to your Talent Partner below and we'll relay it to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHk-Mq-meA">
+                    <rect key="frame" x="24" y="86" width="327" height="98.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.019607843140000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRO-ef-sVD">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hou-UI-fcW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="SEND">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSendTapped:" destination="-1" eventType="touchUpInside" id="MBj-Ce-hM5"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="46V-bZ-Qit" customClass="RSKPlaceholderTextView" customModule="RSKPlaceholderTextView">
+                    <rect key="frame" x="24" y="212.5" width="327" height="366.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type your message here"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CRO-ef-sVD" firstAttribute="leading" secondItem="98r-Cz-mTw" secondAttribute="leading" id="5Hp-xW-CoN"/>
+                <constraint firstItem="46V-bZ-Qit" firstAttribute="leading" secondItem="98r-Cz-mTw" secondAttribute="leading" constant="24" id="9ml-L9-aMS"/>
+                <constraint firstItem="46V-bZ-Qit" firstAttribute="top" secondItem="lHk-Mq-meA" secondAttribute="bottom" constant="28" id="KGV-Z9-5N3"/>
+                <constraint firstItem="lHk-Mq-meA" firstAttribute="top" secondItem="wIr-Gm-w1S" secondAttribute="bottom" constant="16" id="OqP-OE-Di8"/>
+                <constraint firstItem="98r-Cz-mTw" firstAttribute="trailing" secondItem="46V-bZ-Qit" secondAttribute="trailing" constant="24" id="Qxx-pg-kLK"/>
+                <constraint firstItem="98r-Cz-mTw" firstAttribute="trailing" secondItem="lHk-Mq-meA" secondAttribute="trailing" constant="24" id="UgY-48-Xki"/>
+                <constraint firstItem="wIr-Gm-w1S" firstAttribute="leading" secondItem="98r-Cz-mTw" secondAttribute="leading" constant="20" id="V8o-1G-IBh"/>
+                <constraint firstItem="CRO-ef-sVD" firstAttribute="bottom" secondItem="98r-Cz-mTw" secondAttribute="bottom" id="ez6-45-EET"/>
+                <constraint firstItem="CRO-ef-sVD" firstAttribute="top" secondItem="46V-bZ-Qit" secondAttribute="bottom" constant="28" id="nXZ-LZ-lcM"/>
+                <constraint firstItem="lHk-Mq-meA" firstAttribute="leading" secondItem="98r-Cz-mTw" secondAttribute="leading" constant="24" id="pqC-PU-dud"/>
+                <constraint firstItem="CRO-ef-sVD" firstAttribute="trailing" secondItem="98r-Cz-mTw" secondAttribute="trailing" id="q6f-gu-Y8i"/>
+                <constraint firstItem="wIr-Gm-w1S" firstAttribute="top" secondItem="98r-Cz-mTw" secondAttribute="top" id="sJl-0P-b5n"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="98r-Cz-mTw"/>
+            <point key="canvasLocation" x="-179" y="-295"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-button" width="35" height="35"/>
+    </resources>
+</document>

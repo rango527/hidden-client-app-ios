@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserManagersController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="tblViewItems" destination="gpb-Qu-N69" id="FYR-CV-zzB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab7-eP-LFS">
+                    <rect key="frame" x="344" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="h74-vd-bgR"/>
+                        <constraint firstAttribute="height" constant="50" id="wVO-8e-lAb"/>
+                    </constraints>
+                    <state key="normal" image="close-button"/>
+                    <connections>
+                        <action selector="ht_dismiss:" destination="-1" eventType="touchUpInside" id="LFm-0V-D29"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66c-dr-gDS">
+                    <rect key="frame" x="46" y="84" width="322" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="MNq-x7-tcs"/>
+                    </constraints>
+                    <string key="text">Sorry, you don't have user manager permissions so cannot edit user responsibilities. Please get in touch with your colleagues below who do have the correct permissions. They can make the changes for you or can give you the permissions you need:</string>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-Qu-N69">
+                    <rect key="frame" x="30" y="309" width="354" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ab7-eP-LFS" secondAttribute="trailing" constant="20" id="1cd-l8-956"/>
+                <constraint firstItem="66c-dr-gDS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="1sN-GA-tFG"/>
+                <constraint firstItem="66c-dr-gDS" firstAttribute="top" secondItem="Ab7-eP-LFS" secondAttribute="bottom" constant="24" id="6xe-xP-gf0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="66c-dr-gDS" secondAttribute="trailing" constant="46" id="Vga-Tw-Ntc"/>
+                <constraint firstAttribute="bottom" secondItem="gpb-Qu-N69" secondAttribute="bottom" constant="34" id="Vpw-Ul-gnq"/>
+                <constraint firstItem="Ab7-eP-LFS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="d4K-oA-wtW"/>
+                <constraint firstItem="gpb-Qu-N69" firstAttribute="top" secondItem="66c-dr-gDS" secondAttribute="bottom" constant="35" id="fYy-QR-mH1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gpb-Qu-N69" secondAttribute="trailing" constant="30" id="pzM-io-eoj"/>
+                <constraint firstItem="gpb-Qu-N69" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="yaP-Pm-cNx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-button" width="36" height="36"/>
+    </resources>
+</document>

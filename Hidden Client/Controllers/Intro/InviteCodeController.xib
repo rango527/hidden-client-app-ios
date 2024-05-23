@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteCodeController" customModule="Hidden_Client" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bottomView" destination="x9S-Pd-YPP" id="gBI-k4-Rq0"/>
+                <outlet property="btnGetStarted" destination="GGW-4f-PZk" id="0jm-if-cv3"/>
+                <outlet property="txtEmail" destination="kx3-34-3Mi" id="Ajk-7f-BqG"/>
+                <outlet property="txtInviteCode" destination="uVV-dJ-CF7" id="dAX-lG-OVx"/>
+                <outlet property="txtPassword" destination="4D8-7R-kTz" id="21e-Qp-88O"/>
+                <outlet property="view" destination="iN0-l3-epB" id="w8h-hm-1p8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rov-zH-s6j">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIdden-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="dNi-eN-aNg">
+                            <rect key="frame" x="105" y="72" width="165" height="52"/>
+                            <color key="tintColor" red="0.90588235289999997" green="0.2901960784" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="Hidden-Logo"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xs-0A-pSg" customClass="SpringView" customModule="Spring">
+                            <rect key="frame" x="50" y="256.66666666666669" width="275" height="345.00000000000006"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-34-3Mi">
+                                    <rect key="frame" x="15" y="8" width="245" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="clC-gA-6gb"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthEmail"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="3Eh-u0-Peo"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AoG-Wk-FkZ">
+                                    <rect key="frame" x="0.0" y="55" width="275" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Pn0-K0-8Kp"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthEmailLine"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Set Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4D8-7R-kTz">
+                                    <rect key="frame" x="15" y="78" width="245" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="5tB-Ve-kno"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthPassword"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Us1-fc-rka"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRy-4L-jr4">
+                                    <rect key="frame" x="0.0" y="125" width="275" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="axN-Qw-Xd1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthPasswordLine"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Invite Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-dJ-CF7">
+                                    <rect key="frame" x="15" y="148" width="245" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="AXx-H7-CMX"/>
+                                    </constraints>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="send"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Dp8-ul-cwB"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woI-vc-sdH">
+                                    <rect key="frame" x="0.0" y="195" width="275" height="1"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ciV-T2-b4V"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGW-4f-PZk">
+                                    <rect key="frame" x="0.0" y="233" width="275" height="50"/>
+                                    <color key="backgroundColor" red="0.90588235289999997" green="0.2901960784" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="lng-RK-48f"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <state key="normal" title="Get Started">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="disabled">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthAction"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onAcceptInvitation:" destination="-1" eventType="touchUpInside" id="grW-df-zA2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO2-N2-xC7">
+                                    <rect key="frame" x="77.666666666666686" y="294.99999999999994" width="120" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="kQr-dA-eBy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                    <state key="normal" title="I don't have a code">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthNeedAction"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onGoRequestInvite:" destination="-1" eventType="touchUpInside" id="sUM-xc-8Jx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pRy-4L-jr4" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" id="0qb-dY-wP7"/>
+                                <constraint firstItem="yO2-N2-xC7" firstAttribute="centerX" secondItem="2Xs-0A-pSg" secondAttribute="centerX" id="0yr-rE-AvR"/>
+                                <constraint firstItem="GGW-4f-PZk" firstAttribute="top" secondItem="woI-vc-sdH" secondAttribute="bottom" constant="37" id="41W-8n-jMv"/>
+                                <constraint firstAttribute="trailing" secondItem="woI-vc-sdH" secondAttribute="trailing" id="Aji-p5-GR8"/>
+                                <constraint firstItem="4D8-7R-kTz" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" constant="15" id="CaZ-0O-1PW"/>
+                                <constraint firstItem="woI-vc-sdH" firstAttribute="top" secondItem="uVV-dJ-CF7" secondAttribute="bottom" constant="2" id="DCb-OG-DKJ"/>
+                                <constraint firstItem="yO2-N2-xC7" firstAttribute="top" secondItem="GGW-4f-PZk" secondAttribute="bottom" constant="12" id="EbI-u3-Stm"/>
+                                <constraint firstItem="uVV-dJ-CF7" firstAttribute="top" secondItem="pRy-4L-jr4" secondAttribute="bottom" constant="22" id="F0c-AP-qbH"/>
+                                <constraint firstItem="AoG-Wk-FkZ" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" id="GD4-aF-LNg"/>
+                                <constraint firstItem="kx3-34-3Mi" firstAttribute="top" secondItem="2Xs-0A-pSg" secondAttribute="top" constant="8" id="Ob6-9t-XLT"/>
+                                <constraint firstAttribute="trailing" secondItem="uVV-dJ-CF7" secondAttribute="trailing" constant="15" id="Qse-6W-zdW"/>
+                                <constraint firstItem="woI-vc-sdH" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" id="RuD-fo-bPW"/>
+                                <constraint firstAttribute="trailing" secondItem="GGW-4f-PZk" secondAttribute="trailing" id="UCv-5e-jB2"/>
+                                <constraint firstItem="AoG-Wk-FkZ" firstAttribute="top" secondItem="kx3-34-3Mi" secondAttribute="bottom" constant="2" id="dAS-TI-hdu"/>
+                                <constraint firstAttribute="bottom" secondItem="yO2-N2-xC7" secondAttribute="bottom" constant="20" id="dHW-rK-CNN"/>
+                                <constraint firstItem="GGW-4f-PZk" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" id="daA-wa-Cxc"/>
+                                <constraint firstItem="4D8-7R-kTz" firstAttribute="top" secondItem="AoG-Wk-FkZ" secondAttribute="bottom" constant="22" id="gBQ-tN-uRL"/>
+                                <constraint firstItem="uVV-dJ-CF7" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" constant="15" id="pDO-jh-9yl"/>
+                                <constraint firstAttribute="trailing" secondItem="AoG-Wk-FkZ" secondAttribute="trailing" id="qA1-KO-rPs"/>
+                                <constraint firstAttribute="trailing" secondItem="pRy-4L-jr4" secondAttribute="trailing" id="rLr-Zy-aGc"/>
+                                <constraint firstAttribute="trailing" secondItem="kx3-34-3Mi" secondAttribute="trailing" constant="15" id="sYF-ai-2Zo"/>
+                                <constraint firstItem="pRy-4L-jr4" firstAttribute="top" secondItem="4D8-7R-kTz" secondAttribute="bottom" constant="2" id="vJI-yH-vcK"/>
+                                <constraint firstAttribute="trailing" secondItem="4D8-7R-kTz" secondAttribute="trailing" constant="15" id="xhD-2F-zog"/>
+                                <constraint firstItem="kx3-34-3Mi" firstAttribute="leading" secondItem="2Xs-0A-pSg" secondAttribute="leading" constant="15" id="zRN-9i-GD7"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Please enter your invite code below to get started." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sL9-D7-DkD">
+                            <rect key="frame" x="60" y="123.99999999999999" width="255" height="132.66666666666663"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="AuthDescription"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2Xs-0A-pSg" secondAttribute="trailing" constant="50" id="BHp-55-ZQJ"/>
+                        <constraint firstItem="dNi-eN-aNg" firstAttribute="top" secondItem="rov-zH-s6j" secondAttribute="top" constant="72" id="IyZ-E9-rVf"/>
+                        <constraint firstItem="2Xs-0A-pSg" firstAttribute="centerY" secondItem="rov-zH-s6j" secondAttribute="centerY" constant="40" id="UmM-Ww-juI"/>
+                        <constraint firstAttribute="trailing" secondItem="sL9-D7-DkD" secondAttribute="trailing" constant="60" id="ZQF-MK-jrR"/>
+                        <constraint firstItem="2Xs-0A-pSg" firstAttribute="leading" secondItem="rov-zH-s6j" secondAttribute="leading" constant="50" id="bwf-ee-Kyc"/>
+                        <constraint firstItem="2Xs-0A-pSg" firstAttribute="top" secondItem="sL9-D7-DkD" secondAttribute="bottom" id="dtl-Jc-mJ5"/>
+                        <constraint firstItem="sL9-D7-DkD" firstAttribute="top" secondItem="dNi-eN-aNg" secondAttribute="bottom" id="nGi-DP-2HW"/>
+                        <constraint firstItem="dNi-eN-aNg" firstAttribute="leading" secondItem="rov-zH-s6j" secondAttribute="leading" constant="105" id="pQQ-5P-Zve"/>
+                        <constraint firstItem="sL9-D7-DkD" firstAttribute="leading" secondItem="rov-zH-s6j" secondAttribute="leading" constant="60" id="tfh-A7-DrU"/>
+                        <constraint firstAttribute="trailing" secondItem="dNi-eN-aNg" secondAttribute="trailing" constant="105" id="wIr-RI-4b3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9S-Pd-YPP">
+                    <rect key="frame" x="-187.66666666666666" y="698" width="750.33333333333337" height="375"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my2-2e-WfG">
+                            <rect key="frame" x="283.33333333333331" y="20" width="184" height="40"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                            <state key="normal" title="Already a member?">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onGoLogin:" destination="-1" eventType="touchUpInside" id="s5f-93-uye"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.2901960784" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="my2-2e-WfG" firstAttribute="top" secondItem="x9S-Pd-YPP" secondAttribute="top" constant="20" id="EGj-T5-s0b"/>
+                        <constraint firstItem="my2-2e-WfG" firstAttribute="centerX" secondItem="x9S-Pd-YPP" secondAttribute="centerX" id="rXr-bs-F5T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="x9S-Pd-YPP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-80" id="LWC-PX-HGD"/>
+                <constraint firstItem="rov-zH-s6j" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="O49-Wt-JQM"/>
+                <constraint firstItem="x9S-Pd-YPP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aEd-qc-ogQ"/>
+                <constraint firstItem="x9S-Pd-YPP" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="2" id="eWo-j4-aZX"/>
+                <constraint firstItem="x9S-Pd-YPP" firstAttribute="width" secondItem="x9S-Pd-YPP" secondAttribute="height" multiplier="2:1" id="hdi-Rf-0Kh"/>
+                <constraint firstItem="rov-zH-s6j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oSy-pd-omN"/>
+                <constraint firstItem="rov-zH-s6j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p2c-2f-8Dj"/>
+                <constraint firstItem="rov-zH-s6j" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="uos-60-93C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="NO"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+    <resources>
+        <image name="HIdden-Logo" width="266" height="52"/>
+    </resources>
+</document>

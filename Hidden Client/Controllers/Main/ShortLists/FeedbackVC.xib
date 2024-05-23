@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackVC" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="itemsCollectionView" destination="ESl-Iq-IVR" id="6aZ-eV-SLH"/>
+                <outlet property="lblDescription" destination="NVr-WC-ha8" id="gIu-0l-mqG"/>
+                <outlet property="lblTitle" destination="soz-g9-U9f" id="S1x-rB-k7r"/>
+                <outlet property="pageControl" destination="yzx-Kt-tpZ" id="9Du-cM-yBI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="yzx-Kt-tpZ">
+                    <rect key="frame" x="168" y="733" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-dI-5uc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="TO APPROVE GREEN EARPHONES, PLEASE GIVE US SOME QUICK FEEDBACK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soz-g9-U9f">
+                            <rect key="frame" x="30" y="107" width="315" height="82"/>
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*This goes to your Hidden Talent Partner and not to Green Earphones directly" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVr-WC-ha8">
+                            <rect key="frame" x="30" y="194" width="315" height="38.333333333333343"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                            <color key="textColor" red="0.83921568627450982" green="0.84313725490196079" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3t4-x1-Bid">
+                            <rect key="frame" x="20" y="52" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="U3F-d4-V8B"/>
+                                <constraint firstAttribute="width" constant="50" id="Ya3-2F-CfL"/>
+                            </constraints>
+                            <state key="normal" image="back-button"/>
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="-1" eventType="touchUpInside" id="NCt-1J-PwR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NVr-WC-ha8" secondAttribute="trailing" constant="30" id="081-Pf-6Nf"/>
+                        <constraint firstAttribute="height" constant="250" id="1kg-0T-Fmd"/>
+                        <constraint firstItem="soz-g9-U9f" firstAttribute="leading" secondItem="3t6-dI-5uc" secondAttribute="leading" constant="30" id="8S7-Z9-uSt"/>
+                        <constraint firstItem="soz-g9-U9f" firstAttribute="top" secondItem="3t4-x1-Bid" secondAttribute="bottom" constant="5" id="DYc-U2-pjt"/>
+                        <constraint firstItem="NVr-WC-ha8" firstAttribute="leading" secondItem="3t6-dI-5uc" secondAttribute="leading" constant="30" id="Q3p-G1-Fh3"/>
+                        <constraint firstItem="3t4-x1-Bid" firstAttribute="leading" secondItem="3t6-dI-5uc" secondAttribute="leading" constant="20" id="bv9-fv-x8Y"/>
+                        <constraint firstItem="NVr-WC-ha8" firstAttribute="top" secondItem="soz-g9-U9f" secondAttribute="bottom" constant="5" id="k8w-4W-sqx"/>
+                        <constraint firstAttribute="trailing" secondItem="soz-g9-U9f" secondAttribute="trailing" constant="30" id="l2v-Nm-JYL"/>
+                        <constraint firstItem="3t4-x1-Bid" firstAttribute="top" secondItem="3t6-dI-5uc" secondAttribute="topMargin" id="qNd-jh-h8m"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(0,-300)"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ESl-Iq-IVR">
+                    <rect key="frame" x="0.0" y="250" width="375" height="475"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewLayout key="collectionViewLayout" id="rTj-E5-WGJ" customClass="HCCollectionViewFlowLayout" customModule="Hidden_Client" customModuleProvider="target"/>
+                    <cells/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="translate(300,0)"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yzx-Kt-tpZ" firstAttribute="top" secondItem="ESl-Iq-IVR" secondAttribute="bottom" constant="8" id="EO4-MG-nam"/>
+                <constraint firstItem="3t6-dI-5uc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GCY-Zi-34B"/>
+                <constraint firstItem="ESl-Iq-IVR" firstAttribute="top" secondItem="3t6-dI-5uc" secondAttribute="bottom" id="QFO-EH-l2K"/>
+                <constraint firstItem="ESl-Iq-IVR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="S4Y-F5-krE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yzx-Kt-tpZ" secondAttribute="bottom" constant="8" id="g3q-eD-W6O"/>
+                <constraint firstItem="ESl-Iq-IVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nIE-RP-PoK"/>
+                <constraint firstItem="yzx-Kt-tpZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qpD-fc-vjj"/>
+                <constraint firstItem="3t6-dI-5uc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uUA-LV-NGq"/>
+                <constraint firstItem="3t6-dI-5uc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uWB-Ru-YCo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="32.799999999999997" y="52.463054187192121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-button" width="35" height="35"/>
+    </resources>
+</document>

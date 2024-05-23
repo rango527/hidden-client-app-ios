@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextTileView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="356"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3E-da-WDs">
+                    <rect key="frame" x="10" y="10" width="355" height="336"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-nx-FDS">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="336"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Hidden Says" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh8-BI-83l">
+                                    <rect key="frame" x="20" y="27" width="315" height="22"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="What Hidden Says" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-Ho-iMz">
+                                    <rect key="frame" x="20" y="57" width="315" height="259"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="wh8-BI-83l" firstAttribute="top" secondItem="bqZ-nx-FDS" secondAttribute="top" constant="27" id="1i1-1O-Bvv"/>
+                                <constraint firstItem="uDw-Ho-iMz" firstAttribute="top" secondItem="wh8-BI-83l" secondAttribute="bottom" constant="8" id="42Z-md-ewa"/>
+                                <constraint firstItem="wh8-BI-83l" firstAttribute="leading" secondItem="bqZ-nx-FDS" secondAttribute="leading" constant="20" id="5rY-pM-uGE"/>
+                                <constraint firstAttribute="bottom" secondItem="uDw-Ho-iMz" secondAttribute="bottom" constant="20" id="YRB-cC-yPS"/>
+                                <constraint firstAttribute="trailing" secondItem="uDw-Ho-iMz" secondAttribute="trailing" constant="20" id="f72-Or-19v"/>
+                                <constraint firstItem="uDw-Ho-iMz" firstAttribute="leading" secondItem="bqZ-nx-FDS" secondAttribute="leading" constant="20" id="fg3-wb-uSK"/>
+                                <constraint firstAttribute="trailing" secondItem="wh8-BI-83l" secondAttribute="trailing" constant="20" id="w9g-QY-1Bu"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bqZ-nx-FDS" firstAttribute="leading" secondItem="x3E-da-WDs" secondAttribute="leading" id="2Y5-hK-4NQ"/>
+                        <constraint firstItem="bqZ-nx-FDS" firstAttribute="top" secondItem="x3E-da-WDs" secondAttribute="top" id="6Eg-qk-1VD"/>
+                        <constraint firstAttribute="bottom" secondItem="bqZ-nx-FDS" secondAttribute="bottom" id="aQD-pI-gLb"/>
+                        <constraint firstAttribute="trailing" secondItem="bqZ-nx-FDS" secondAttribute="trailing" id="j6u-tG-nRt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x3E-da-WDs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="I4u-Ue-ycK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x3E-da-WDs" secondAttribute="trailing" constant="10" id="Lde-bH-QyE"/>
+                <constraint firstItem="x3E-da-WDs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="UKW-xM-pdS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="x3E-da-WDs" secondAttribute="bottom" constant="10" id="nl6-wx-tTp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblDescription" destination="uDw-Ho-iMz" id="zdR-XH-pTY"/>
+                <outlet property="lblTitle" destination="wh8-BI-83l" id="VJY-oE-fT1"/>
+            </connections>
+            <point key="canvasLocation" x="-130" y="-177"/>
+        </view>
+    </objects>
+</document>

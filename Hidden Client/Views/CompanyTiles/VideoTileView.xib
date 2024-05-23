@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoTileView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXk-tZ-myq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-qJ-Oab">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D75-J8-fbm">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                            <state key="normal" image="play"/>
+                            <connections>
+                                <action selector="onOpenMediaViewer:" destination="iN0-l3-epB" eventType="touchUpInside" id="h3a-Bu-Zhu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="D75-J8-fbm" firstAttribute="top" secondItem="RXk-tZ-myq" secondAttribute="top" id="1Db-IA-9RC"/>
+                        <constraint firstAttribute="trailing" secondItem="D75-J8-fbm" secondAttribute="trailing" id="N6c-ub-DTk"/>
+                        <constraint firstAttribute="bottom" secondItem="9ha-qJ-Oab" secondAttribute="bottom" id="Oo5-eR-e25"/>
+                        <constraint firstAttribute="height" constant="250" id="P3I-Kg-snp"/>
+                        <constraint firstItem="9ha-qJ-Oab" firstAttribute="top" secondItem="RXk-tZ-myq" secondAttribute="top" id="Q4Y-yO-S2s"/>
+                        <constraint firstAttribute="bottom" secondItem="D75-J8-fbm" secondAttribute="bottom" id="UYF-dn-hS7"/>
+                        <constraint firstItem="9ha-qJ-Oab" firstAttribute="leading" secondItem="RXk-tZ-myq" secondAttribute="leading" id="X6W-VX-TMX"/>
+                        <constraint firstAttribute="trailing" secondItem="9ha-qJ-Oab" secondAttribute="trailing" id="l7y-kw-ouV"/>
+                        <constraint firstItem="D75-J8-fbm" firstAttribute="leading" secondItem="RXk-tZ-myq" secondAttribute="leading" id="rTb-Ax-aaI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RXk-tZ-myq" secondAttribute="trailing" id="BCJ-nL-05i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RXk-tZ-myq" secondAttribute="bottom" id="Mfd-FJ-J5B"/>
+                <constraint firstItem="RXk-tZ-myq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aSf-1t-GS2"/>
+                <constraint firstItem="RXk-tZ-myq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cyU-5l-j9q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="itemImageView" destination="9ha-qJ-Oab" id="qYh-XY-0ul"/>
+            </connections>
+            <point key="canvasLocation" x="-47.5" y="-104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play" width="60" height="60"/>
+    </resources>
+</document>

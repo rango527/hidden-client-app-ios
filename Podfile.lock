@@ -1,0 +1,120 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
+  - BonMot (5.4.1)
+  - CCBottomRefreshControl (0.5.2)
+  - Differentiator (3.1.0)
+  - Hero (1.4.0)
+  - IQKeyboardManagerSwift (6.5.1)
+  - Kingfisher (5.8.1):
+    - Kingfisher/Core (= 5.8.1)
+  - Kingfisher/Core (5.8.1)
+  - ObjectMapper (3.5.1)
+  - PKHUD (5.3.0)
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
+  - RSKPlaceholderTextView (5.0.2)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxDocumentPicker (0.1.5):
+    - RxCocoa (~> 4.5.0)
+    - RxSwift (~> 4.5.0)
+  - RxSwift (4.5.0)
+  - Sentry (4.3.1):
+    - Sentry/Core (= 4.3.1)
+  - Sentry/Core (4.3.1)
+  - Spring (1.0.6)
+  - SwiftyGif (5.1.1)
+  - UrbanAirship-iOS-SDK (11.1.2)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper
+  - BonMot
+  - CCBottomRefreshControl
+  - Hero
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - PKHUD
+  - RealmSwift (~> 3.18.0)
+  - RSKPlaceholderTextView (~> 5.0.2)
+  - RxCocoa
+  - RxDataSources
+  - RxDocumentPicker
+  - RxSwift
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `4.3.1`)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - SwiftyGif
+  - UrbanAirship-iOS-SDK
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - BonMot
+    - CCBottomRefreshControl
+    - Differentiator
+    - Hero
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - ObjectMapper
+    - PKHUD
+    - Realm
+    - RealmSwift
+    - RSKPlaceholderTextView
+    - RxCocoa
+    - RxDataSources
+    - RxDocumentPicker
+    - RxSwift
+    - SwiftyGif
+    - UrbanAirship-iOS-SDK
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
+  BonMot: aa82119ff2ffa184223d8a31c72aed84fbb009e0
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
+  Kingfisher: de969e451c81ca6c07a454bc36fea84b8b08c3c7
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
+  RSKPlaceholderTextView: df72ca93edfac185b98f51cb85e445f54ce8a163
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxDocumentPicker: cc4354ba2b47464ae3ecbcdfdbe887e3d5c38c13
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  Sentry: 5267d493a398663538317e4dcc438c12c66202ed
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  SwiftyGif: f7702483db93586a41f04f4927cd682852a2fa10
+  UrbanAirship-iOS-SDK: bd236d9bc00e3c1c5e1682d8ed780d615a115811
+
+PODFILE CHECKSUM: 55909b8372c74235f865b5dc2c7c1dc218a9b1e8
+
+COCOAPODS: 1.8.1

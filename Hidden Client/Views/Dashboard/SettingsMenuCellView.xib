@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsMenuCellView" rowHeight="110" id="KGk-i7-Jjw" customClass="SettingsMenuCellView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtg-DV-IRk">
+                        <rect key="frame" x="24" y="17" width="345" height="76"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5hu-zA-Uy5">
+                        <rect key="frame" x="393" y="37" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="9je-EE-YV7"/>
+                            <constraint firstAttribute="width" constant="36" id="raO-66-Z2F"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5hu-zA-Uy5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="786-Z0-DaO"/>
+                    <constraint firstItem="vtg-DV-IRk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="9YM-fI-Zrr"/>
+                    <constraint firstAttribute="bottom" secondItem="vtg-DV-IRk" secondAttribute="bottom" constant="17" id="a9K-cj-MR1"/>
+                    <constraint firstItem="5hu-zA-Uy5" firstAttribute="leading" secondItem="vtg-DV-IRk" secondAttribute="trailing" constant="24" id="j3w-aS-7TT"/>
+                    <constraint firstItem="vtg-DV-IRk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="tW5-iS-9oO"/>
+                    <constraint firstAttribute="trailing" secondItem="5hu-zA-Uy5" secondAttribute="trailing" constant="24" id="yUe-WC-1fc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemImageView" destination="5hu-zA-Uy5" id="a2e-et-JHf"/>
+                <outlet property="lblTitle" destination="vtg-DV-IRk" id="Nrl-JT-QKI"/>
+            </connections>
+            <point key="canvasLocation" x="12.5" y="-55"/>
+        </tableViewCell>
+    </objects>
+</document>

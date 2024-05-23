@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GiveAvailabilityController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="messageTextView" destination="4Wu-nN-48d" id="VQW-2l-nLh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRm-cv-YzO">
+                    <rect key="frame" x="20" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="9xN-dZ-uMv"/>
+                        <constraint firstAttribute="height" constant="50" id="eCK-jQ-qgC"/>
+                    </constraints>
+                    <state key="normal" image="back-button"/>
+                    <connections>
+                        <action selector="onDismiss:" destination="-1" eventType="touchUpInside" id="oPU-hE-bR5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a message to your Talent Partner with your availability and we'll do the rest..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-6d-naQ">
+                    <rect key="frame" x="24" y="66" width="327" height="131.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.019607843137254902" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jO6-E1-ApE">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="xlr-Nq-bpz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="SEND">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSendTapped:" destination="-1" eventType="touchUpInside" id="81O-JV-xe9"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-nN-48d" customClass="RSKPlaceholderTextView" customModule="RSKPlaceholderTextView">
+                    <rect key="frame" x="24" y="225.5" width="327" height="353.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Avenir-MediumOblique" family="Avenir" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type your message here"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jO6-E1-ApE" firstAttribute="top" secondItem="4Wu-nN-48d" secondAttribute="bottom" constant="28" id="7pE-GI-Lt5"/>
+                <constraint firstItem="IRm-cv-YzO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Jwp-X5-9qc"/>
+                <constraint firstItem="jO6-E1-ApE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KkA-GR-Cpy"/>
+                <constraint firstItem="4Wu-nN-48d" firstAttribute="top" secondItem="FFB-6d-naQ" secondAttribute="bottom" constant="28" id="Q3f-4B-VBx"/>
+                <constraint firstItem="jO6-E1-ApE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YmA-Vk-Bm9"/>
+                <constraint firstItem="jO6-E1-ApE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mC4-QM-WeI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FFB-6d-naQ" secondAttribute="trailing" constant="24" id="piT-We-Rom"/>
+                <constraint firstItem="FFB-6d-naQ" firstAttribute="top" secondItem="IRm-cv-YzO" secondAttribute="bottom" constant="16" id="qM2-Yg-ryr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Wu-nN-48d" secondAttribute="trailing" constant="24" id="u4b-7B-ZVv"/>
+                <constraint firstItem="FFB-6d-naQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="vP9-aj-KSV"/>
+                <constraint firstItem="IRm-cv-YzO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vR5-KK-nRi"/>
+                <constraint firstItem="4Wu-nN-48d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="z5e-bi-5xR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-163" y="7"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-button" width="35" height="35"/>
+    </resources>
+</document>

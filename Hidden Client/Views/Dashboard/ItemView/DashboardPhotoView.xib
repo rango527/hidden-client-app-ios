@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P8i-wf-GDw" customClass="DashboardPhotoView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDW-KT-Lra">
+                    <rect key="frame" x="16" y="8" width="449" height="79"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                    <color key="textColor" red="0.0" green="0.019607843140000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XEB-mP-hWE">
+                    <rect key="frame" x="0.0" y="95" width="481" height="272"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="272" id="UBD-bs-zgq"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="UAV-Fp-Z8n">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XEB-mP-hWE" firstAttribute="top" secondItem="fDW-KT-Lra" secondAttribute="bottom" constant="8" id="3cE-2Z-TFe"/>
+                <constraint firstItem="fDW-KT-Lra" firstAttribute="top" secondItem="OKT-vV-Xrb" secondAttribute="top" constant="8" id="LpZ-2j-uDS"/>
+                <constraint firstItem="fDW-KT-Lra" firstAttribute="leading" secondItem="OKT-vV-Xrb" secondAttribute="leading" constant="16" id="RKO-AE-O1x"/>
+                <constraint firstItem="OKT-vV-Xrb" firstAttribute="bottom" secondItem="XEB-mP-hWE" secondAttribute="bottom" constant="8" id="Sky-Kj-SoP"/>
+                <constraint firstItem="OKT-vV-Xrb" firstAttribute="trailing" secondItem="fDW-KT-Lra" secondAttribute="trailing" constant="16" id="enm-hQ-Tbc"/>
+                <constraint firstItem="OKT-vV-Xrb" firstAttribute="trailing" secondItem="XEB-mP-hWE" secondAttribute="trailing" id="pRN-go-es5"/>
+                <constraint firstItem="XEB-mP-hWE" firstAttribute="leading" secondItem="OKT-vV-Xrb" secondAttribute="leading" id="tOr-Mh-nFX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OKT-vV-Xrb"/>
+            <connections>
+                <outlet property="collectionView" destination="XEB-mP-hWE" id="frG-rs-s6B"/>
+                <outlet property="titleLabel" destination="fDW-KT-Lra" id="L8z-MJ-7bU"/>
+            </connections>
+            <point key="canvasLocation" x="-762" y="-471"/>
+        </view>
+    </objects>
+</document>

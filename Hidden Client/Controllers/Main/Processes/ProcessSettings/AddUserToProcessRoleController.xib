@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddUserToProcessRoleController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSave" destination="Aek-Pv-n2l" id="JrI-fz-Tcy"/>
+                <outlet property="lblTitle" destination="ZiM-d1-aGi" id="HOj-sM-aHi"/>
+                <outlet property="tblViewItems" destination="hy1-KI-L2j" id="BxC-l2-IwC"/>
+                <outlet property="txtSearch" destination="7Ri-MO-DCh" id="zeF-XV-yPK"/>
+                <outlet property="txtViewAdditionalUser" destination="H63-im-UX8" id="r3j-yU-tT4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksX-My-gDY">
+                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="L0v-wS-9yU"/>
+                        <constraint firstAttribute="height" constant="50" id="rdk-Zg-PJ4"/>
+                    </constraints>
+                    <state key="normal" image="back-button"/>
+                    <connections>
+                        <action selector="ht_dismiss:" destination="-1" eventType="touchUpInside" id="Hja-xw-8cs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shortlist Reviewers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiM-d1-aGi">
+                    <rect key="frame" x="20" y="70" width="238" height="36"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ri-MO-DCh">
+                    <rect key="frame" x="24" y="126" width="366" height="35"/>
+                    <color key="backgroundColor" red="0.85637562970000003" green="0.86248170430000004" blue="0.88079992780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ucy-OF-kYy"/>
+                    </constraints>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-KI-L2j">
+                    <rect key="frame" x="30" y="181" width="355" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                </tableView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H63-im-UX8">
+                    <rect key="frame" x="37" y="741" width="340" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="sct-QQ-Dzh"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Can't find who you're looking for? They might not on Hidden yet. ">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Add them here">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="14" name="Avenir-Heavy"/>
+                                <real key="NSKern" value="0.0"/>
+                                <font key="NSOriginalFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <color key="NSStrokeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <real key="NSStrokeWidth" value="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gbD-WX-g3q"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-Pv-n2l">
+                    <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="TCh-gS-YXA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="SAVE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onSave:" destination="-1" eventType="touchUpInside" id="A7U-v6-NwM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Ri-MO-DCh" secondAttribute="trailing" constant="24" id="6VE-MZ-yGm"/>
+                <constraint firstItem="H63-im-UX8" firstAttribute="top" secondItem="hy1-KI-L2j" secondAttribute="bottom" constant="20" id="ET3-Mu-GKv"/>
+                <constraint firstItem="Aek-Pv-n2l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FKL-WE-Ter"/>
+                <constraint firstItem="ZiM-d1-aGi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Isr-FA-cfw"/>
+                <constraint firstItem="Aek-Pv-n2l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="P5B-uE-CRr"/>
+                <constraint firstItem="7Ri-MO-DCh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="UDR-uA-Fhg"/>
+                <constraint firstItem="7Ri-MO-DCh" firstAttribute="top" secondItem="ZiM-d1-aGi" secondAttribute="bottom" constant="20" id="VTq-vO-E3x"/>
+                <constraint firstItem="Aek-Pv-n2l" firstAttribute="top" secondItem="H63-im-UX8" secondAttribute="bottom" constant="15" id="YOu-33-Dfm"/>
+                <constraint firstItem="H63-im-UX8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="Zsa-mf-l8t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hy1-KI-L2j" secondAttribute="trailing" constant="29" id="bcq-Iw-rWb"/>
+                <constraint firstItem="ksX-My-gDY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="bgN-me-g7x"/>
+                <constraint firstItem="ZiM-d1-aGi" firstAttribute="top" secondItem="ksX-My-gDY" secondAttribute="bottom" constant="10" id="dgf-iv-m7s"/>
+                <constraint firstAttribute="bottom" secondItem="Aek-Pv-n2l" secondAttribute="bottom" id="eBc-x9-MN9"/>
+                <constraint firstItem="hy1-KI-L2j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="hGz-Kn-FZx"/>
+                <constraint firstItem="ksX-My-gDY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="mPF-Jf-BxX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H63-im-UX8" secondAttribute="trailing" constant="37" id="xMr-o3-uCU"/>
+                <constraint firstItem="hy1-KI-L2j" firstAttribute="top" secondItem="7Ri-MO-DCh" secondAttribute="bottom" constant="20" id="zWm-Wk-Yt2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-button" width="35" height="35"/>
+    </resources>
+</document>

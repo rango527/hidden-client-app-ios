@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="CandidateDirectoryCellView" customModule="Hidden_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHG-Vs-8yC">
+                        <rect key="frame" x="15" y="32.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="BOh-JO-3WG"/>
+                            <constraint firstAttribute="height" constant="45" id="aLP-F4-Ud1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kh-vh-RKb">
+                        <rect key="frame" x="75" y="5" width="314" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="999" constant="300.5" id="opi-nE-xPJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked-icon" translatesAutoresizingMaskIntoConstraints="NO" id="89c-z9-vYi">
+                        <rect key="frame" x="396.5" y="39" width="32.5" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32.329999999999998" id="FEt-n5-buM"/>
+                            <constraint firstAttribute="height" constant="32.329999999999998" id="KSs-PG-rlg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bHG-Vs-8yC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0Ce-jO-ypn"/>
+                    <constraint firstItem="bHG-Vs-8yC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5nE-W2-TqA"/>
+                    <constraint firstItem="6kh-vh-RKb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="C8v-Ir-DSY"/>
+                    <constraint firstItem="6kh-vh-RKb" firstAttribute="leading" secondItem="bHG-Vs-8yC" secondAttribute="trailing" constant="15" id="SUE-z2-Wzp"/>
+                    <constraint firstItem="89c-z9-vYi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VId-5v-4Yc"/>
+                    <constraint firstAttribute="bottom" secondItem="6kh-vh-RKb" secondAttribute="bottom" constant="5" id="Ypx-bc-70X"/>
+                    <constraint firstAttribute="trailing" secondItem="89c-z9-vYi" secondAttribute="trailing" constant="24" id="lPg-Zp-w5e"/>
+                    <constraint firstItem="89c-z9-vYi" firstAttribute="leading" secondItem="6kh-vh-RKb" secondAttribute="trailing" constant="7.5" id="sQO-gb-qUE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkedImageView" destination="89c-z9-vYi" id="RG5-Ua-kG4"/>
+                <outlet property="itemImageView" destination="bHG-Vs-8yC" id="KhT-UK-fTI"/>
+                <outlet property="lblTitle" destination="6kh-vh-RKb" id="Qzs-Vf-7xl"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="154.72263868065968"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unchecked-icon" width="36" height="36"/>
+    </resources>
+</document>

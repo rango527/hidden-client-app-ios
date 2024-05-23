@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteUserInRoleController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDelete" destination="4IO-FN-inP" id="hE5-6m-NuY"/>
+                <outlet property="lblTitle" destination="A1E-ax-BEM" id="UAo-tJ-zjS"/>
+                <outlet property="segmentUserScope" destination="Kd6-6l-3tH" id="jHH-rK-r5d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-FN-inP">
+                    <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.29019607843137252" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="6tD-Z0-nAX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <state key="normal" title="REMOVE">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onDelete:" destination="-1" eventType="touchUpInside" id="6H6-fk-DKc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-nK-jKI">
+                    <rect key="frame" x="0.0" y="169" width="414" height="85"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8a-iV-Tln" userLabel="Seperator">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                            <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="FAY-7i-Ri0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove from:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-8S-enQ">
+                            <rect key="frame" x="149.5" y="10" width="115" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="115" id="N6m-Yc-ZPW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kd6-6l-3tH">
+                            <rect key="frame" x="25" y="44" width="364" height="32"/>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="OsO-xj-53A"/>
+                            </constraints>
+                            <segments>
+                                <segment title="New Process Only"/>
+                                <segment title="Old + New Processes"/>
+                            </segments>
+                            <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onSelectNewUserScope:" destination="-1" eventType="valueChanged" id="ELB-ed-S9a"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlJ-YB-nvL">
+                            <rect key="frame" x="267.5" y="8" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="SGb-Vu-cgK"/>
+                                <constraint firstAttribute="height" constant="15" id="uQA-0l-C46"/>
+                            </constraints>
+                            <state key="normal" image="question-mark"/>
+                            <connections>
+                                <action selector="onTip:" destination="-1" eventType="touchUpInside" id="adK-yF-kUr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="W5f-8S-enQ" firstAttribute="top" secondItem="xvm-nK-jKI" secondAttribute="top" constant="10" id="0y0-Eg-avW"/>
+                        <constraint firstItem="Kd6-6l-3tH" firstAttribute="leading" secondItem="xvm-nK-jKI" secondAttribute="leading" constant="25" id="2Ep-jn-dIq"/>
+                        <constraint firstItem="Kd6-6l-3tH" firstAttribute="top" secondItem="W5f-8S-enQ" secondAttribute="bottom" constant="9" id="RpH-Br-ovy"/>
+                        <constraint firstItem="W5f-8S-enQ" firstAttribute="centerX" secondItem="xvm-nK-jKI" secondAttribute="centerX" id="c8S-NZ-Ubs"/>
+                        <constraint firstAttribute="height" constant="85" id="dx8-u7-lan"/>
+                        <constraint firstItem="YlJ-YB-nvL" firstAttribute="leading" secondItem="W5f-8S-enQ" secondAttribute="trailing" constant="3" id="ifW-1T-5aq"/>
+                        <constraint firstItem="W5f-8S-enQ" firstAttribute="top" secondItem="YlJ-YB-nvL" secondAttribute="bottom" constant="-13" id="mL3-RH-5BA"/>
+                        <constraint firstAttribute="trailing" secondItem="I8a-iV-Tln" secondAttribute="trailing" id="nP5-Na-mFr"/>
+                        <constraint firstItem="I8a-iV-Tln" firstAttribute="top" secondItem="xvm-nK-jKI" secondAttribute="top" id="qTD-P0-ybC"/>
+                        <constraint firstAttribute="bottom" secondItem="Kd6-6l-3tH" secondAttribute="bottom" constant="10" id="tCx-ML-ARy"/>
+                        <constraint firstAttribute="trailing" secondItem="Kd6-6l-3tH" secondAttribute="trailing" constant="25" id="uiK-aX-CFv"/>
+                        <constraint firstItem="I8a-iV-Tln" firstAttribute="leading" secondItem="xvm-nK-jKI" secondAttribute="leading" id="zOB-AF-DAh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ7-89-BaK">
+                    <rect key="frame" x="344" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HDg-uf-UL4"/>
+                        <constraint firstAttribute="width" constant="50" id="rcw-KJ-3V4"/>
+                    </constraints>
+                    <state key="normal" image="close-button"/>
+                    <connections>
+                        <action selector="ht_dismiss:" destination="-1" eventType="touchUpInside" id="3WI-8e-e5D"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-ax-BEM">
+                    <rect key="frame" x="26" y="69" width="362" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9gj-Ku-KbA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xvm-nK-jKI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9Lf-ek-Ja9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A1E-ax-BEM" secondAttribute="trailing" constant="26" id="CkH-en-XHl"/>
+                <constraint firstAttribute="bottom" secondItem="4IO-FN-inP" secondAttribute="bottom" id="EUa-Uf-WWg"/>
+                <constraint firstItem="xvm-nK-jKI" firstAttribute="top" secondItem="A1E-ax-BEM" secondAttribute="bottom" constant="50" id="HcQ-fk-bZ2"/>
+                <constraint firstItem="4IO-FN-inP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ID1-YO-ej9"/>
+                <constraint firstItem="A1E-ax-BEM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="c9z-QF-OaK"/>
+                <constraint firstItem="wJ7-89-BaK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="cTu-F3-uuk"/>
+                <constraint firstItem="4IO-FN-inP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="l4y-c1-78R"/>
+                <constraint firstItem="xvm-nK-jKI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lUc-gN-anP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wJ7-89-BaK" secondAttribute="trailing" constant="20" id="lgb-dT-F17"/>
+                <constraint firstItem="A1E-ax-BEM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="yLc-jC-FY1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-button" width="36" height="36"/>
+        <image name="question-mark" width="14" height="14"/>
+    </resources>
+</document>

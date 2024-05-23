@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobSettingsController" customModule="Hidden_Client" customModuleProvider="target">
+            <connections>
+                <outlet property="lblJobTitle" destination="ZkQ-GO-v9i" id="IAA-UQ-3Om"/>
+                <outlet property="tblViewItems" destination="W8C-b2-Qoa" id="451-QM-BZV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W8C-b2-Qoa">
+                    <rect key="frame" x="0.0" y="165" width="414" height="731"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOz-v7-U8w">
+                    <rect key="frame" x="354" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CXu-nw-Gwr"/>
+                        <constraint firstAttribute="width" constant="50" id="ooe-2L-TR3"/>
+                    </constraints>
+                    <state key="normal" image="close-button"/>
+                    <connections>
+                        <action selector="hero_dismissViewController" destination="-1" eventType="touchUpInside" id="Tsy-jh-KeP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-ct-hjh">
+                    <rect key="frame" x="25" y="69" width="154.5" height="36"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="26"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creative Director in London" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-GO-v9i">
+                    <rect key="frame" x="25" y="120" width="379" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="bWu-jO-sMD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZkQ-GO-v9i" firstAttribute="leading" secondItem="LNv-ct-hjh" secondAttribute="leading" id="3NE-fy-UWa"/>
+                <constraint firstItem="ZkQ-GO-v9i" firstAttribute="top" secondItem="LNv-ct-hjh" secondAttribute="bottom" constant="15" id="7CL-EM-CYC"/>
+                <constraint firstItem="gOz-v7-U8w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Ie2-5G-PXB"/>
+                <constraint firstItem="LNv-ct-hjh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="JeU-8R-V2Z"/>
+                <constraint firstItem="LNv-ct-hjh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="NBX-LG-rX2"/>
+                <constraint firstAttribute="bottom" secondItem="W8C-b2-Qoa" secondAttribute="bottom" id="Q5w-Bf-i3C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gOz-v7-U8w" secondAttribute="trailing" constant="10" id="Ruv-8u-dWY"/>
+                <constraint firstItem="W8C-b2-Qoa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="a2w-be-xMn"/>
+                <constraint firstItem="W8C-b2-Qoa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="asy-Yp-67C"/>
+                <constraint firstItem="W8C-b2-Qoa" firstAttribute="top" secondItem="ZkQ-GO-v9i" secondAttribute="bottom" constant="25" id="iNk-j0-1UU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gOz-v7-U8w" secondAttribute="trailing" constant="10" id="li8-Vr-01t"/>
+                <constraint firstItem="ZkQ-GO-v9i" firstAttribute="trailing" secondItem="gOz-v7-U8w" secondAttribute="trailing" id="wl0-AU-0IC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-button" width="36" height="36"/>
+    </resources>
+</document>
